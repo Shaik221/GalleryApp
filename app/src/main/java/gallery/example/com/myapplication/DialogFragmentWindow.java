@@ -18,7 +18,7 @@ public class DialogFragmentWindow extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.popup_window);
         Intent iin= getIntent();
         Bundle b = iin.getExtras();
