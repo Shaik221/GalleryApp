@@ -1,0 +1,25 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:id="@+id/imagegallery"/>
+
+    <TextView
+        android:id="@+id/info_text"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/imagegallery"
+        android:layout_gravity="center"
+        android:text="sample"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
