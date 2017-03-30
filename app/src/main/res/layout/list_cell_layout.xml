@@ -5,9 +5,9 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="200dp"
-        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
         android:id="@+id/imagegallery"/>
 
     <TextView
@@ -16,9 +16,9 @@
         android:paddingBottom="10dp"
         android:layout_width="wrap_content"
         android:layout_below="@+id/imagegallery"
-        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
         android:text="sample"
-        android:textSize="32sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@android:color/background_dark"
         android:layout_height="wrap_content" />
