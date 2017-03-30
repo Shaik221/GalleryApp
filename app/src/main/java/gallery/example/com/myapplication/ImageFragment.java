@@ -32,11 +32,10 @@ public class ImageFragment extends Fragment{
         ImageView imageView = (ImageView)v.findViewById(R.id.image_popup);
         int imageId = getArguments().getInt("Image_Id");
         Bitmap tempBitmap = ImageUtils.decodeResource(getResources(),imageId);
-        int height = imageView.getMaxHeight();
+        int height = ImageUtils.dpToPx(getContext(),400);
         int width = imageView.getMaxWidth();
         Bitmap scaleBitmap = ImageUtils.getResizedBitmap(tempBitmap,width,height);
         imageView.setImageBitmap(scaleBitmap);
-
 
         return v;
 
